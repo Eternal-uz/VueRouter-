@@ -49,7 +49,7 @@ const routes = [{
     {
         path: '/event/:afterEvent(.*)',
         redirect: to => {
-                return { path: '/events/' + to.params.afterEvent }
+                return { name: '/EventDetails/' + to.params.afterEvent }
             }
             // path: '/event/:id',
             // redirect: () => {
